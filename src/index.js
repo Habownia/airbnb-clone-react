@@ -1,17 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import '../src/css/index.css';
+import Header from './js/Header';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+function MainContent() {
+	return (
+		<main>
+			<h1>Reasons why I'm learning React: </h1>
+			<ol>
+				<li>Bo jest fajny</li>
+				<li>Bo jest fajny</li>
+				<li>Bo jest fajny</li>
+			</ol>
+		</main>
+	);
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+function Footer() {
+	return (
+		<footer>
+			<small>2022 Trzycierz development. All rights reserved</small>
+		</footer>
+	);
+}
+
+function Page() {
+	return (
+		<div>
+			<Header />
+			<MainContent />
+			<Footer />
+		</div>
+	);
+}
+
+ReactDOM.render(<Page />, document.getElementById('root'));
