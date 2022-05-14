@@ -1,0 +1,32 @@
+.card {
+	margin: 20px;
+}
+
+.card--photo {
+	width: 200px;
+}
+
+.card-avail {
+	position: relative;
+}
+
+.card--rating {
+	display: flex;
+	align-items: center;
+}
+
+.card--star {
+	padding: 5px;
+	width: 25px;
+}
+
+.gray {
+	padding-left: 5px;
+	color: gray;
+}
+
+.card p,
+.card span {
+	margin: 0;
+	font-size: 13px;
+}

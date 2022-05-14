@@ -52,7 +52,11 @@ nav {
 	padding: 20px;
 }
 
-.hero-photos {
-	max-width: 300px;
-	/* align-self: center; */
+.hero--photo {
+	max-width: 600px;
+	align-self: center;
+}
+
+.cards-cont {
+	display: flex;
 }
