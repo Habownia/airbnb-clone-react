@@ -1,7 +1,7 @@
 # React
 
 Ostatnia minuta kursu:
-<https://youtu.be/bMknfKXIFA8?t=11943>
+<https://youtu.be/bMknfKXIFA8?t=13662>
 
 Figma link
 <https://www.figma.com/file/usm4kQt0QspmQP7ofp6zdI/Airbnb-Experiences-(Copy)?node-id=0%3A1>
@@ -9,3 +9,7 @@ Figma link
 # Uruchamianie w CMD
 
 ### `npm start`
+
+# Jak włączyć Github Pages w React.js
+
+<https://www.youtube.com/watch?v=2hM5viLMJpA>

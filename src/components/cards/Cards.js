@@ -12,29 +12,29 @@ export default function Cards() {
 			<div className='cards-cont'>
 				<Card
 					img={katieZaferes}
-					rate = "5.0"
-					num='6'
+					rate='5.0'
+					num={6}
 					country='USA'
 					presc='Life lessons with Katie Zaferes'
-					price='136'
+					price={136}
 				/>
 
 				<Card
 					img={wedding}
-					rate = "5.0"
-					num='30'
+					rate='5.0'
+					num={30}
 					country='USA'
 					presc='Learn wedding photography                    '
-					price='125'
+					price={125}
 				/>
 
 				<Card
 					img={bike}
-					rate = "5.0"
-					num='2'
+					rate='5.0'
+					num={2}
 					country='USA'
 					presc='Group Mountain Biking'
-					price='50'
+					price={50}
 				/>
 			</div>
 		</div>

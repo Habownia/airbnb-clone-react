@@ -1,8 +1,10 @@
 import React from 'react';
 
-import './card.css'
+import './card.css';
 
 import star from './img/star.png';
+
+// export default function Card({img, rate, num, country, presc, price}) {
 
 export default function Card(props) {
 	return (
@@ -17,7 +19,8 @@ export default function Card(props) {
 					<span className='gray'>({props.num}) · </span>
 					<span className='gray'>{props.country}</span>
 				</div>
-				<p>{props.presc}</p>
+				{props.presc && <p>{props.presc}</p>}
+				{/* Jeśli nie ma podanego props'a to nie wyświetla on  */}
 				<p>
 					<b>From ${props.price}</b> / person
 				</p>
