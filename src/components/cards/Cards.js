@@ -1,42 +1,24 @@
 import React from 'react';
 
 import Card from '../card/Card';
-
-import katieZaferes from './img/katie-zaferes.png';
-import wedding from './img/wedding.png';
-import bike from './img/bike.png';
+import data from '../data';
 
 export default function Cards() {
+	const cards = data.map((item) => {
+		return (
+			<Card
+				key={item.id}
+				{...item}
+				// item = {item}
+				// działa to jak np. price = item.price
+				// zamiast item = {item} i zamieniania wszystkiego w kodzie
+			/>
+		);
+	});
+
 	return (
 		<div>
-			<div className='cards-cont'>
-				<Card
-					img={katieZaferes}
-					rate='5.0'
-					num={6}
-					country='USA'
-					presc='Life lessons with Katie Zaferes'
-					price={136}
-				/>
-
-				<Card
-					img={wedding}
-					rate='5.0'
-					num={30}
-					country='USA'
-					presc='Learn wedding photography                    '
-					price={125}
-				/>
-
-				<Card
-					img={bike}
-					rate='5.0'
-					num={2}
-					country='USA'
-					presc='Group Mountain Biking'
-					price={50}
-				/>
-			</div>
+			<div className='cards-cont'>{cards}</div>
 		</div>
 	);
 }

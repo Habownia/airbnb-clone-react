@@ -10,7 +10,7 @@ export default function App() {
 		<div>
 			<Nav />
 			<Hero />
-            <Cards />
+			<Cards />
 		</div>
 	);
 }
